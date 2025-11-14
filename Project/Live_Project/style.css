@@ -1,0 +1,824 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* width: 100vw; */
+    /* width: 100dvw; */
+    width: 100%;
+    font-family: "Raleway";
+
+    @media (max-width:320px) and (min-width: 0) {
+        /* display: none; */
+    }
+
+    .content-global-conf {
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 160px;
+
+        @media (max-width:1280px) and (min-width: 768px) {
+            width: 100%;
+            max-width: 1280px;
+            padding: 0 24px;
+        }
+
+        @media (max-width:767px) and (min-width: 320px) {
+            width: 100%;
+            max-width: 767px;
+            padding: 0 16px;
+        }
+
+        @media (max-width:319px) and (min-width: 100px) {
+            width: 100%;
+            max-width: 419px;
+            padding: 0 12px;
+        }
+    }
+
+    main {
+
+        #aot {
+            background-image: url(./assets/img/1_hero/JPG/hero_bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            height: 100dvh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            color: white;
+
+            /* .content-global-conf {} */
+            .content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                #header {
+                    /* height: min(112px, 7.78dvw); */
+                    height: 112px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    @media (max-width:1280px) and (min-width: 768px) {
+                        /* height: min(112px, 8.75dvw); */
+                        height: 112px;
+                    }
+
+                    @media (max-width:767px) and (min-width: 320px) {
+                        /* height: min(64px, 8.33dvw); */
+                        height: 64px;
+                    }
+
+                    @media (max-width:319px) and (min-width: 100px) {
+                        height: min(64px, 15.24vw);
+                    }
+
+                    #logo {
+                        /* width: min(64px, 4.44dvw); */
+                        width: 64px;
+                        /* height: min(64px, 4.44dvw); */
+                        height: 64px;
+
+                        @media (max-width:1280px) and (min-width: 768px) {
+                            /* width: min(64px, 5dvw); */
+                            width: 64px;
+                            height: 64px;
+
+                        }
+
+                        @media (max-width:767px) and (min-width: 320px) {
+                            /* width: min(40px, 5.21dvw); */
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        @media (max-width:319px) and (min-width: 100px) {
+                            width: min(40px, 9.52vw);
+                        }
+                    }
+
+                    #navbar {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        gap: 2dvw;
+
+                        .navLinks {
+                            color: white;
+                            /* font-size: min(24px, 1.67dvw); */
+                            font-size: 24px;
+                            font-weight: 400;
+
+                            &:hover {
+                                cursor: pointer;
+                                /* scale: 2; */
+                                color: orange;
+                            }
+                        }
+
+                        #call_us {
+                            background: #9F0908;
+                            border: 1px solid white;
+                            /* border-radius: min(10px, 0.69dvw); */
+                            border-radius: 15px;
+                            /* padding: min(8px, 0.55dvw) min(16px, 1.11dvw); */
+                            padding: 7px 16px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            /* font-size: min(24px, 1.67dvw); */
+                            font-size: 24px;
+                            font-weight: 400;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            #img_phone {
+                                /* width: min(32px, 2.22dvw); */
+                                width: 32px;
+                                /* height: min(32px, 2.22dvw); */
+                                height: 32px;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: black;
+                                color: red;
+                            }
+                        }
+
+                        @media (max-width:1280px) and (min-width: 768px) {
+                            .navLinks {
+                                display: none;
+                            }
+
+                            #call_us {
+                                /* font-size: min(20px, 1.56dvw); */
+                                padding: 6px 12px;
+                                font-size: 20px;
+                                border-radius: 10px;
+
+                                #img_phone {
+                                    width: 26px;
+                                    height: 26px;
+                                }
+                            }
+                        }
+
+                        @media (max-width:767px) and (min-width: 320px) {
+                            .navLinks {
+                                display: none;
+                            }
+
+                            #call_us {
+                                /* font-size: min(16px, 2.08dvw); */
+                                padding: 5px 10px;
+                                font-size: 16px;
+                                border-radius: 10px;
+
+                                #img_phone {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+
+                        @media (max-width:319px) and (min-width: 100px) {
+                            .navLinks {
+                                display: none;
+                            }
+
+                            #call_us {
+                                /* font-size: min(16px, 2.08dvw); */
+                                padding: 4px 10px;
+                                font-size: min(16px, 3.81vw);
+                                border-radius: 7px;
+
+                                #img_phone {
+                                    width: min(20px, 4.76vw);
+                                    height: min(20px, 4.76vw);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #hero {
+                    align-self: center;
+                    position: absolute;
+                    top: 35%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-weight: 400;
+                    text-align: center;
+
+                    h1 {
+                        font-size: 96px;
+                    }
+
+                    div {
+                        padding-top: 16px;
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
+
+                    @media (max-width:1280px) and (min-width: 768px) {
+                        h1 {
+                            font-size: 72px;
+                        }
+
+                        div {
+                            padding-top: 16px;
+                            font-size: 20px;
+                        }
+                    }
+
+                    @media (max-width:767px) and (min-width: 420px) {
+                        h1 {
+                            font-size: 44px;
+                        }
+
+                        div {
+                            padding-top: 16px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    @media (max-width:419px) and (min-width: 320px) {
+                        h1 {
+                            font-size: min(44px, 10.48vw);
+                        }
+
+                        div {
+                            padding-top: 16px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    @media (max-width:319px) and (min-width: 100px) {
+                        h1 {
+                            font-size: min(44px, 10.48vw);
+                        }
+
+                        div {
+                            padding-top: min(16px, 3.81vw);
+                            font-size: min(16px, 3.81vw);
+                        }
+                    }
+                }
+            }
+        }
+
+        #hto {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* padding: min(120px, 8.33dvw) 0; */
+            padding: 120px 0;
+
+            @media (max-width:1280px) and (min-width: 768px) {
+                /* padding: min(96px, 7.5dvw) 0; */
+                padding: 96px 0;
+            }
+
+            @media (max-width:767px) and (min-width: 320px) {
+                /* padding: min(72px, 9.38dvw) 0; */
+                padding: min(72px, 17.14vw) 0;
+            }
+
+            @media (max-width:319px) and (min-width: 100px) {
+                padding: 72px 0;
+            }
+
+            /* .content-global-conf {} */
+            .content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                #hto_title {
+                    text-align: center;
+                    font-style: normal;
+                    /* font-size: min(80px, 5.56dvw); */
+                    font-size: 80px;
+                    font-weight: bold;
+                    color: #9F0908;
+                    /* padding-bottom: min(64px, 4.4dvw); */
+                    padding-bottom: 64px;
+
+                    @media (max-width:1280px) and (min-width: 768px) {
+                        /* font-size: min(64px, 5dvw); */
+                        font-size: 64px;
+                        /* padding-bottom: min(48px, 3.75dvw); */
+                        padding-bottom: 48px;
+                    }
+
+                    @media (max-width:767px) and (min-width: 420px) {
+                        /* font-size: min(40px, 5.21dvw); */
+                        font-size: 40px;
+                        /* padding-bottom: min(48px, 6.25dvw); */
+                        padding-bottom: 48px;
+                    }
+
+                    @media (max-width:419px) and (min-width: 320px) {
+                        font-size: min(44px, 10.48vw);
+                        padding-bottom: 48px;
+                    }
+
+                    @media (max-width:319px) and (min-width: 100px) {
+                        font-size: min(40px, 9.52vw);
+                        padding-bottom: min(48px, 11.43vw);
+                    }
+                }
+
+                #hto_boxes_area {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: min(150px, 10.42vw);
+
+                    @media (max-width:767px) and (min-width: 500px) {
+                        /* flex-direction: column; */
+                        /* gap: min(32px, 4.17vw); */
+                    }
+
+                    @media (max-width:499px) and (min-width: 320px) {
+                        flex-direction: column;
+                        /* gap: min(32px, 4.17vw); */
+                    }
+
+                    @media (max-width:319px) and (min-width: 100px) {
+                        flex-direction: column;
+                        gap: min(32px, 7.62vw);
+                    }
+
+                    .hto_boxes {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        img {
+                            /* width: min(128px, 8.89dvw); */
+                            width: 128px;
+                            height: 128px;
+
+                            @media (max-width:1280px) and (min-width: 768px) {
+                                /* width: min(112px, 8.75dvw); */
+                                width: 112px;
+                                height: 112px;
+                            }
+
+                            @media (max-width:767px) and (min-width: 320px) {
+                                /* width: min(112px, 14.58dvw); */
+                                width: 112px;
+                                height: 112px;
+                            }
+
+                            @media (max-width:319px) and (min-width: 100px) {
+                                width: min(112px, 26.67vw)x;
+                                height: min(112px, 26.67vw);
+                            }
+                        }
+
+                        div {
+                            /* padding-top: min(16px, 1.11dvw); */
+                            padding-top: 16px;
+                            font-family: "Economica";
+                            /* font-size: min(56px, 3.89dvw); */
+                            font-size: 56px;
+                            font-weight: bold;
+                            text-align: center;
+
+                            @media (max-width:1280px) and (min-width: 768px) {
+                                /* font-size: min(32px, 2.5dvw); */
+                                font-size: 32px;
+                                /* padding-top: min(8px, 0.63dvw); */
+                                padding-top: 8px;
+                            }
+
+                            @media (max-width:767px) and (min-width: 320px) {
+                                /* font-size: min(32px, 4.17dvw); */
+                                font-size: 32px;
+                                /* padding-top: min(8px, 1.04dvw); */
+                                padding-top: 8px;
+                            }
+
+                            @media (max-width:319px) and (min-width: 100px) {
+                                font-size: min(32px, 7.62vw);
+                                padding-top: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #om {
+            background-image: url(./assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* padding: min(120px, 8.33dvw) 0; */
+            padding: 120px 0;
+
+            @media (max-width:1280px) and (min-width: 768px) {
+                /* padding: min(96px, 7.5dvw) 0; */
+                padding: 96px 0;
+            }
+
+            @media (max-width:767px) and (min-width: 320px) {
+                /* padding: min(72px, 9.38dvw) 0; */
+                padding: 72px 0;
+            }
+
+            @media (max-width:319px) and (min-width: 100px) {
+                padding: min(72px, 17.14vw) 0;
+            }
+
+            /* .content-global-conf {} */
+            .content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                #om_title {
+                    color: #9F0908;
+                    /* font-size: min(80px, 5.56dvw); */
+                    font-size: 80px;
+                    font-weight: bold;
+                    text-align: center;
+                    /* padding-bottom: min(64px, 4.4dvw); */
+                    padding-bottom: 64px;
+
+                    @media (max-width:1280px) and (min-width: 768px) {
+                        /* font-size: min(64px, 5dvw); */
+                        font-size: 64px;
+                        /* padding-bottom: min(48px, 3.75dvw); */
+                        padding-bottom: 48px;
+                    }
+
+                    @media (max-width:767px) and (min-width: 320px) {
+                        /* font-size: min(40px, 5.21dvw); */
+                        font-size: 40px;
+                        /* padding-bottom: min(40px, 5.21dvw); */
+                        padding-bottom: 40px;
+                    }
+
+                    @media (max-width:319px) and (min-width: 100px) {
+                        font-size: min(40px, 9.52vw);
+                        padding-bottom: min(40px, 9.52vw);
+                    }
+                }
+
+                #om_middle_food_box {
+                    flex-direction: row-reverse;
+                    align-self: flex-end;
+
+                    @media (max-width:767px) and (min-width: 320px) {
+                        flex-direction: column;
+                        align-self: center;
+                    }
+                }
+
+                #om_foods_list {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    /* gap: min(56px, 3.89dvw); */
+                    gap: 56px;
+
+                    @media (max-width:1280px) and (min-width: 768px) {
+                        /* gap: min(32px, 2.5dvw); */
+                        gap: 32px;
+                    }
+
+                    @media (max-width:767px) and (min-width: 320px) {
+                        /* gap: min(32px, 4.17dvw); */
+                        gap: 32px;
+                        align-items: center;
+                    }
+
+                    @media (max-width:319px) and (min-width: 100px) {
+                        gap: min(32px, 7.62vw);
+                        align-items: center;
+                    }
+
+                    .om_food_boxes {
+                        /* border: 1px solid red; */
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        /* gap: min(56px, 3.89dvw); */
+                        gap: 56px;
+
+                        @media (max-width:1280px) and (min-width: 768px) {
+                            /* gap: min(24px, 1.88dvw); */
+                            gap: 24px;
+                        }
+
+                        @media (max-width:767px) and (min-width: 320px) {
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 16px;
+                        }
+
+                        @media (max-width:319px) and (min-width: 100px) {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 16px;
+                        }
+
+                        .om_food_imgs {
+                            /* width: min(352px, 24.44dvw); */
+                            width: 352px;
+
+                            @media (max-width:1280px) and (min-width: 768px) {
+                                /* width: min(352px, 27.5dvw); */
+                                width: 352px;
+                            }
+
+                            @media (max-width:767px) and (min-width: 370px) {
+                                /* width: min(343px, 44.66dvw); */
+                                width: 343px;
+                            }
+
+                            @media (max-width:369px) and (min-width: 320px) {
+                                /* width: min(343px, 44.66dvw); */
+                                width: min(343px, 92.7vw);
+                            }
+
+                            @media (max-width:319px) and (min-width: 100px) {
+                                width: min(343px, 81.67vw);
+                            }
+                        }
+
+                        .om_food_infos {
+                            width: min(550px, 38.19vw);
+                            /* width: 550px; */
+
+                            @media (max-width:1280px) and (min-width: 768px) {
+                                width: min(550px, 42.97vw);
+                            }
+
+                            @media (max-width:767px) and (min-width: 320px) {
+                                width: min(550px, 71.61vw);
+                            }
+
+                            @media (max-width:319px) and (min-width: 100px) {
+                                width: 100%;
+                            }
+
+                            .food_names {
+                                /* padding-bottom: min(16px, 1.11dvw); */
+                                padding-bottom: 16px;
+                                font-family: "Economica";
+                                /* font-size: min(56px, 3.89dvw); */
+                                font-size: 56px;
+                                font-weight: bold;
+
+                                @media (max-width:1280px) and (min-width: 768px) {
+                                    /* font-size: min(32px, 2.5dvw); */
+                                    font-size: 32px;
+                                }
+
+                                @media (max-width:767px) and (min-width: 320px) {
+                                    font-size: 32px;
+                                }
+
+                                @media (max-width:319px) and (min-width: 100px) {
+                                    font-size: min(32px, 7.62vw);
+                                }
+                            }
+
+                            table {
+                                width: 100%;
+                                font-family: "Raleway";
+                                font-style: normal;
+                                color: #675E54;
+                                /* font-size: min(32px, 2.22dvw); */
+                                font-size: 32px;
+                                font-weight: bold;
+
+                                @media (max-width:1280px) and (min-width: 768px) {
+                                    /* font-size: min(24px, 1.88dvw); */
+                                    font-size: 24px;
+                                }
+
+                                @media (max-width:767px) and (min-width: 320px) {
+                                    font-size: 24px;
+                                }
+
+                                @media (max-width:319px) and (min-width: 100px) {
+                                    font-size: min(24px, 5.71vw);
+                                }
+
+                                tr {
+                                    td {
+                                        /* padding-bottom: min(8px, 0.55dvw); */
+                                        padding-bottom: 8px;
+                                    }
+
+                                    .food_prices {
+                                        text-align: right;
+                                    }
+
+                                    .ingredients {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #fua {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            /* padding: min(120px, 8.33dvw) 0; */
+            padding: 120px 0;
+            /* padding-bottom: min(16px, 1.11dvw); */
+            padding-bottom: 16px;
+
+            @media (max-width:1280px) and (min-width: 768px) {
+                /* padding: min(96px, 7.5dvw) 0; */
+                padding: 96px 0;
+                padding-bottom: 0;
+            }
+
+            @media (max-width:767px) and (min-width: 320px) {
+                /* padding: min(72px, 9.38dvw) 0; */
+                padding: 72px 0;
+                padding-bottom: 0;
+            }
+
+            @media (max-width:319px) and (min-width: 100px) {
+                padding: min(72px, 17.14vw) 0;
+                padding-bottom: 0;
+            }
+
+            /* WITHOUT .content-global-conf {} */
+            .content {
+                width: 100%;
+                max-width: var(--global-max-width);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                #fua_title {
+                    /* padding-bottom: min(8px, 0.55dvw); */
+                    padding-bottom: 8px;
+                    color: #9F0908;
+                    /* font-size: min(80px, 5.56dvw); */
+                    font-size: 80px;
+                    font-weight: bold;
+
+                    @media (max-width:1280px) and (min-width: 768px) {
+                        /* font-size: min(64px, 5dvw); */
+                        font-size: 64px;
+                    }
+
+                    @media (max-width:767px) and (min-width: 320px) {
+                        /* font-size: min(40px, 5.21dvw); */
+                        font-size: 40px;
+                    }
+
+                    @media (max-width:319px) and (min-width: 100px) {
+                        font-size: min(40px, 9.52vw);
+                    }
+                }
+
+                #fua_address {
+                    display: flex;
+                    align-items: center;
+                    /* padding-top: min(8px, 0.55dvw); */
+                    padding-top: 8px;
+                    /* padding-bottom: min(64px, 4.4dvw); */
+                    padding-bottom: 64px;
+                    /* font-size: min(24px, 1.67dvw); */
+                    font-size: 24px;
+
+                    #map_marker {
+                        width: 25px;
+
+                        @media (max-width:1280px) and (min-width: 768px) {
+                            width: 20px;
+                        }
+
+                        @media (max-width:767px) and (min-width: 320px) {
+                            width: 15px;
+                        }
+
+                        @media (max-width:319px) and (min-width: 100px) {
+                            width: min(15px, 3.57vw);
+                        }
+                    }
+
+                    @media (max-width:1280px) and (min-width: 768px) {
+                        /* padding-bottom: min(48px, 3.75dvw); */
+                        padding-bottom: 48px;
+                        /* font-size: min(20px, 1.56dvw); */
+                        font-size: 20px;
+                    }
+
+                    @media (max-width:767px) and (min-width: 320px) {
+                        /* padding-bottom: min(40px, 5.21dvw); */
+                        padding-bottom: 40px;
+                        /* font-size: min(16px, 2.08dvw); */
+                        font-size: 16px;
+                    }
+
+                    @media (max-width:319px) and (min-width: 100px) {
+                        font-size: min(16px, 3.81vw);
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    /* height: min(144px, 10dvw); */
+    height: 144px;
+    background: #0A141E;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width:767px) and (min-width: 0) {
+        height: 86px;
+    }
+
+    /* .content-global-conf {} */
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #img_logo {
+            background-image: url(./assets/img/5_section_footer/SVG/sakura_ramen_logo_and_text.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 44px;
+            width: 310px;
+
+            @media (max-width:767px) and (min-width: 320px) {
+                background-image: url(./assets/img/1_hero/SVG/sakura_logo.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 40px;
+                width: 40px;
+            }
+
+            @media (max-width:319px) and (min-width: 100px) {
+                background-image: url(./assets/img/1_hero/SVG/sakura_logo.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: min(40px, 9.52vw);
+                width: min(40px, 9.52vw);
+            }
+        }
+
+        #social_media {
+            display: flex;
+            /* gap: min(8px, 0.55dvw); */
+            gap: 8px;
+
+            img {
+                /* width: min(40px, 2.78dvw); */
+                width: 40px;
+
+                @media (max-width:767px) and (min-width: 320px) {
+                    width: 32px;
+                }
+
+                @media (max-width:319px) and (min-width: 100px) {
+                    width: min(32px, 7.62vw);
+                }
+            }
+        }
+    }
+}
